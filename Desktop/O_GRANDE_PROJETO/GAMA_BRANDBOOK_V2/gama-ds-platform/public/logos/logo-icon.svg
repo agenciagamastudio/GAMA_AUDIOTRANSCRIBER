@@ -1,0 +1,30 @@
+<svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <!-- GAMA Logo - Icon Only (Apenas símbolo, sem texto) -->
+  <!-- Perfeito para favicon, app icon, navigation bar -->
+  <defs>
+    <linearGradient id="gamaIcon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#88CE11;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6BA00F;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle (light) -->
+  <circle cx="128" cy="128" r="120" fill="#88CE11" opacity="0.08"/>
+
+  <!-- Main icon container -->
+  <g transform="translate(128, 128)">
+    <!-- Outer ring -->
+    <circle cx="0" cy="0" r="110" fill="none" stroke="#88CE11" stroke-width="3"/>
+
+    <!-- Studio symbol: Film/Play icon (centered, larger) -->
+    <g transform="translate(-35, -25)">
+      <!-- Film strip -->
+      <rect x="0" y="0" width="70" height="50" fill="none" stroke="#88CE11" stroke-width="2.5" rx="3"/>
+      <line x1="17.5" y1="0" x2="17.5" y2="50" stroke="#88CE11" stroke-width="2.5"/>
+      <line x1="35" y1="0" x2="35" y2="50" stroke="#88CE11" stroke-width="2.5"/>
+      <line x1="52.5" y1="0" x2="52.5" y2="50" stroke="#88CE11" stroke-width="2.5"/>
+      <!-- Play symbol inside -->
+      <polygon points="30,17 30,33 45,25" fill="#88CE11"/>
+    </g>
+  </g>
+</svg>

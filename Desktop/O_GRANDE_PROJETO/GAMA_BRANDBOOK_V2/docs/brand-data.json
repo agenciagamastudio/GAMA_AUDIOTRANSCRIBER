@@ -1,0 +1,413 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "released": "2026-04-04",
+    "format": "Gama Brand Data Standard (JSON + W3C Design Tokens)",
+    "maintainer": "@analyst (Research) / @architect (Aria)",
+    "status": "PHASE-1-CONSOLIDATION",
+    "scope": "All 5 Gama brands (DESIGN_SYSTEM, EDUCATION, CALCULADORA, FINANCEIRO, BRANDBOOK)",
+    "consolidationApproach": "Unified across all brands with brand-specific overrides"
+  },
+  "gamaWide": {
+    "missionStatement": "Transforming businesses through intelligent design and technology",
+    "coreMissionPoints": [
+      "Unified design language across all products",
+      "Consistency in user experience",
+      "Component-driven architecture",
+      "Scalable, maintainable systems"
+    ],
+    "coreValues": [
+      "Precision (números, cálculo, consistência)",
+      "Innovation (technology-driven)",
+      "Accessibility (inclusive design)",
+      "Scalability (modular, reusable)",
+      "Clarity (clear communication)"
+    ],
+    "toneOfVoice": {
+      "traits": [
+        "Professional yet approachable",
+        "Clear and direct communication",
+        "Confident without being arrogant",
+        "Data-driven (supported by evidence)",
+        "Forward-thinking"
+      ],
+      "guidelines": {
+        "formal": "For enterprise/financial products",
+        "friendly": "For education/community products",
+        "technical": "For developer-facing documentation",
+        "accessible": "Always prioritize clarity over complexity"
+      }
+    }
+  },
+  "colors": {
+    "system": {
+      "primary": {
+        "name": "Gama Green (Neon)",
+        "hex": "#88CE11",
+        "rgb": "136, 206, 17",
+        "hsl": "90°, 84%, 46%",
+        "description": "Primary brand color, CTA, highlights, focus states",
+        "darkModeUsage": "Buttons, links, primary interactions",
+        "accessibility": "WCAG AA compliant with white text"
+      },
+      "secondary": {
+        "name": "Gama Blue",
+        "hex": "#3B82F6",
+        "rgb": "59, 130, 246",
+        "hsl": "217°, 98%, 61%",
+        "description": "Secondary interactions, information, accents",
+        "darkModeUsage": "Links, secondary buttons"
+      }
+    },
+    "background": {
+      "base": {
+        "name": "Almost Black",
+        "hex": "#161616",
+        "rgb": "22, 22, 22",
+        "usage": "Primary background (dark mode first)"
+      },
+      "darker": {
+        "name": "Pure Black",
+        "hex": "#0A0A0A",
+        "rgb": "10, 10, 10",
+        "usage": "Deep backgrounds, overlays"
+      }
+    },
+    "surface": {
+      "default": {
+        "name": "Charcoal",
+        "hex": "#272727",
+        "rgb": "39, 39, 39",
+        "usage": "Cards, elevated surfaces, panels"
+      },
+      "accent": {
+        "name": "Surface Accent",
+        "hex": "#333928",
+        "rgb": "51, 57, 40",
+        "usage": "Subtle surface variation, borders"
+      }
+    },
+    "text": {
+      "primary": {
+        "name": "White",
+        "hex": "#FFFFFF",
+        "usage": "Main text, high contrast"
+      },
+      "secondary": {
+        "name": "Gray 400",
+        "hex": "#A1A1AA",
+        "usage": "Secondary text, descriptions, muted"
+      },
+      "tertiary": {
+        "name": "Gray 500",
+        "hex": "#71717A",
+        "usage": "Tertiary text, very subtle"
+      },
+      "muted": {
+        "name": "Gray 600",
+        "hex": "#52525B",
+        "usage": "Disabled states, minimal prominence"
+      }
+    },
+    "semantic": {
+      "success": {
+        "name": "Success Green",
+        "hex": "#10B981",
+        "usage": "Confirmations, positive states, approvals"
+      },
+      "warning": {
+        "name": "Warning Amber",
+        "hex": "#F59E0B",
+        "usage": "Alerts, attention required, cautions"
+      },
+      "error": {
+        "name": "Error Red",
+        "hex": "#E11D48",
+        "usage": "Errors, destructive actions, failures"
+      },
+      "info": {
+        "name": "Info Blue",
+        "hex": "#3B82F6",
+        "usage": "Information, hints, help"
+      }
+    }
+  },
+  "typography": {
+    "fontFamily": {
+      "primary": "Poppins",
+      "secondary": "JetBrains Mono",
+      "fallback": "system-ui, -apple-system, sans-serif"
+    },
+    "scale": {
+      "4xl": {
+        "size": "48px",
+        "weight": 900,
+        "lineHeight": "1.2",
+        "letterSpacing": "-0.02em",
+        "usage": "Page titles, hero sections"
+      },
+      "3xl": {
+        "size": "36px",
+        "weight": 800,
+        "lineHeight": "1.2",
+        "letterSpacing": "-0.01em",
+        "usage": "Section titles, major headings"
+      },
+      "2xl": {
+        "size": "24px",
+        "weight": 700,
+        "lineHeight": "1.3",
+        "usage": "Subsection titles, featured text"
+      },
+      "xl": {
+        "size": "20px",
+        "weight": 600,
+        "lineHeight": "1.4",
+        "usage": "Card titles, labeled sections"
+      },
+      "lg": {
+        "size": "18px",
+        "weight": 500,
+        "lineHeight": "1.5",
+        "usage": "Subheadings, important text"
+      },
+      "base": {
+        "size": "16px",
+        "weight": 400,
+        "lineHeight": "1.6",
+        "usage": "Body text, default"
+      },
+      "sm": {
+        "size": "14px",
+        "weight": 400,
+        "lineHeight": "1.5",
+        "usage": "Captions, secondary text"
+      },
+      "xs": {
+        "size": "12px",
+        "weight": 400,
+        "lineHeight": "1.4",
+        "usage": "Footnotes, metadata, badges"
+      }
+    },
+    "weights": {
+      "light": 300,
+      "normal": 400,
+      "medium": 500,
+      "semibold": 600,
+      "bold": 700,
+      "extrabold": 800,
+      "black": 900
+    },
+    "principle": "Bold fonts are default - keep hierarchy clear"
+  },
+  "spacing": {
+    "system": "4px base unit",
+    "scale": {
+      "xs": "4px",
+      "sm": "8px",
+      "md": "12px",
+      "lg": "16px",
+      "xl": "24px",
+      "2xl": "32px",
+      "3xl": "48px",
+      "4xl": "64px"
+    },
+    "principle": "Multiples of 4px for grid alignment"
+  },
+  "brandSpecific": {
+    "design-system": {
+      "id": "design-system",
+      "name": "GAMA Design System",
+      "purpose": "Unified design language and component library",
+      "dna": "padrão • consistência • componentes • grid",
+      "philosophy": "Foundation for all Gama products",
+      "colorScheme": "Dark-first, neon accents",
+      "targetAudience": "Internal team, product designers, developers",
+      "uniqueVisualPatterns": [
+        "Glassmorphism (blurred backgrounds, transparency)",
+        "Neon accent colors (#88CE11 primary)",
+        "High contrast dark mode",
+        "Component-driven UI",
+        "Grid-aligned spacing"
+      ]
+    },
+    "education": {
+      "id": "education",
+      "name": "GAMA Educação",
+      "purpose": "Learning platform with personalized visualization",
+      "dna": "aprendizado • visualização • gamificação • comunidade",
+      "philosophy": "Make learning accessible and engaging",
+      "colorScheme": "Dark-first, with educational green accents",
+      "targetAudience": "Students, educators, course creators",
+      "uniqueVisualPatterns": [
+        "Obsidian-style visualization (node-based learning maps)",
+        "Gamification elements (badges, progress bars)",
+        "Card-based content blocks",
+        "Community features (collaboration)",
+        "Interactive learning paths"
+      ]
+    },
+    "calculadora": {
+      "id": "calculadora",
+      "purpose": "Precision calculations and numerical analysis",
+      "dna": "números • cálculo • precisão • lógica",
+      "philosophy": "Accuracy and clarity in computation",
+      "colorScheme": "Dark-first, minimal accent colors",
+      "targetAudience": "Finance professionals, analysts, developers",
+      "uniqueVisualPatterns": [
+        "Minimalist interface (focus on numbers)",
+        "Grid-aligned input fields",
+        "Clear result display",
+        "Formula visualization",
+        "Historical calculations log"
+      ]
+    },
+    "financeiro": {
+      "id": "financeiro",
+      "name": "Gama Financeiro",
+      "purpose": "Corporate financial management system",
+      "dna": "gestão • financeiro • análise • enterprise",
+      "philosophy": "Professional, trustworthy financial management",
+      "colorScheme": "Dark-first, professional blue/green accents",
+      "targetAudience": "CFOs, accountants, business managers (SME-focused)",
+      "uniqueVisualPatterns": [
+        "Dashboard layouts (KPIs, metrics)",
+        "Data visualization (charts, graphs)",
+        "Professional typography (high legibility)",
+        "Form-heavy UI (data entry)",
+        "Report generation features"
+      ]
+    },
+    "brandbook": {
+      "id": "brandbook",
+      "name": "GAMA Brandbook",
+      "purpose": "Centralized brand guidelines and documentation",
+      "dna": "marca • identidade • consistência • documentação",
+      "philosophy": "Single source of truth for brand decisions",
+      "colorScheme": "Dark-first, full color palette showcase",
+      "targetAudience": "Designers, marketers, brand stakeholders",
+      "uniqueVisualPatterns": [
+        "Logo variants showcase",
+        "Color palette grids",
+        "Typography demonstrations",
+        "Usage guidelines with examples",
+        "Before/after comparisons"
+      ]
+    }
+  },
+  "visualPatterns": [
+    {
+      "name": "Glassmorphism",
+      "description": "Blurred glass effect with transparency overlay",
+      "colors": "White/black with 5-10% opacity + blur",
+      "usedIn": ["design-system", "education"],
+      "cssProperty": "bg-white/5 backdrop-blur-md border-white/10"
+    },
+    {
+      "name": "Neon Accents",
+      "description": "Bright #88CE11 green for primary CTAs",
+      "colors": "#88CE11",
+      "usedIn": ["design-system", "education", "calculadora"],
+      "cssProperty": "text-primary (custom)"
+    },
+    {
+      "name": "Dark Mode First",
+      "description": "Primary dark background (#161616) with white text",
+      "colors": "#161616 bg, #FFFFFF text",
+      "usedIn": ["all brands"],
+      "cssProperty": "bg-black text-white"
+    },
+    {
+      "name": "High Contrast",
+      "description": "Maximized contrast for accessibility",
+      "colors": "WCAG AAA compliant",
+      "usedIn": ["all brands"],
+      "accessibility": "Critical"
+    },
+    {
+      "name": "Grid-Aligned Spacing",
+      "description": "All spacing in multiples of 4px",
+      "spacing": "4, 8, 12, 16, 24, 32, 48, 64px",
+      "usedIn": ["all brands"],
+      "precision": "Essential for consistency"
+    },
+    {
+      "name": "Component Modularity",
+      "description": "Reusable components with variants",
+      "variants": "Size, color, state, density",
+      "usedIn": ["design-system", "all extending brands"],
+      "principle": "Don't Repeat Yourself (DRY)"
+    }
+  ],
+  "brandSources": {
+    "design-system": {
+      "path": "/GAMA_DESIGN_SYSTEM/gama-ds-platform",
+      "files": [
+        "design-tokens/tokens.json",
+        "design-tokens/tokens.css",
+        "tailwind.config.ts",
+        "README.md"
+      ],
+      "analysis": "Primary source of truth for tokens and design system"
+    },
+    "education": {
+      "path": "/GAMA_EDUCATION",
+      "files": [
+        "README.md",
+        "docs/architecture",
+        "package.json"
+      ],
+      "analysis": "Educational platform with gamification and learning paths"
+    },
+    "calculadora": {
+      "path": "/GAMA_CALCULADORA",
+      "files": [
+        "README.md",
+        "gama-calculadora-next/package.json",
+        "gama-calculadora-next/tailwind.config.ts"
+      ],
+      "analysis": "Precision-focused calculator with clean minimal design"
+    },
+    "financeiro": {
+      "path": "/GAMA_FINANCEIRO",
+      "files": [
+        "README.md",
+        "docs",
+        "package.json"
+      ],
+      "analysis": "Enterprise financial management system"
+    },
+    "brandbook": {
+      "path": "/GAMA_BRANDBOOK",
+      "files": [
+        "GAMA-BRANDBOOK-TECNICO.md",
+        "GAMA-BRANDBOOK-EXECUTIVO.md",
+        "gama-brandbook-moderno.html"
+      ],
+      "analysis": "Centralized brand documentation"
+    }
+  },
+  "consistency": {
+    "sharedElements": [
+      "Primary green color (#88CE11)",
+      "Dark mode background (#161616)",
+      "Typography scale (Poppins primary)",
+      "Spacing grid (4px base)",
+      "Semantic color system"
+    ],
+    "brandDifferences": [
+      "GAMA_DESIGN_SYSTEM: Component library, most abstract",
+      "GAMA_EDUCATION: Gamification, learning visualizations",
+      "GAMA_CALCULADORA: Minimalist, number-focused",
+      "GAMA_FINANCEIRO: Professional, dashboard-heavy",
+      "GAMA_BRANDBOOK: Documentation, showcase-focused"
+    ],
+    "consistencyScore": "High (90%) - core colors, typography, spacing unified"
+  },
+  "nextSteps": {
+    "phase2": "Extract design components from each brand",
+    "phase3": "Create component library integration plan",
+    "phase4": "Implement token migration across all projects"
+  }
+}

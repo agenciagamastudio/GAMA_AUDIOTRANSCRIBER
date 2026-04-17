@@ -1,0 +1,44 @@
+<svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <!-- GAMA Logo - Negative (Branco em escuro) -->
+  <defs>
+    <linearGradient id="gamaNegative" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F0F0F0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle (transparent, design for dark backgrounds) -->
+  <circle cx="128" cy="128" r="120" fill="#FFFFFF" opacity="0.05"/>
+
+  <!-- Main icon container -->
+  <g transform="translate(128, 128)">
+    <!-- Outer ring -->
+    <circle cx="0" cy="0" r="110" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+
+    <!-- Studio symbol: Film/Play icon -->
+    <g transform="translate(-30, -20)">
+      <!-- Film strip -->
+      <rect x="0" y="0" width="60" height="40" fill="none" stroke="#FFFFFF" stroke-width="2" rx="2"/>
+      <line x1="15" y1="0" x2="15" y2="40" stroke="#FFFFFF" stroke-width="2"/>
+      <line x1="30" y1="0" x2="30" y2="40" stroke="#FFFFFF" stroke-width="2"/>
+      <line x1="45" y1="0" x2="45" y2="40" stroke="#FFFFFF" stroke-width="2"/>
+      <!-- Play symbol inside -->
+      <polygon points="25,15 25,25 35,20" fill="#FFFFFF"/>
+    </g>
+
+    <!-- Text: GAMA -->
+    <text x="0" y="75"
+          font-size="18"
+          font-weight="700"
+          fill="#FFFFFF"
+          text-anchor="middle"
+          font-family="Poppins, sans-serif">GAMA</text>
+    <text x="0" y="98"
+          font-size="14"
+          font-weight="600"
+          fill="#FFFFFF"
+          text-anchor="middle"
+          font-family="Poppins, sans-serif"
+          opacity="0.95">BRANDBOOK</text>
+  </g>
+</svg>
